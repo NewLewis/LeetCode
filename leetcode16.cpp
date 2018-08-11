@@ -8,7 +8,7 @@ public:
     int threeSumClosest(vector<int>& nums, int target) {
     	sort(nums.begin(),nums.end());
     	
-    	int res = -((1 << 31) + 1);
+    	int res = 99999999;
         for(int i=0;i<nums.size();i++){
         	int start = i+1,end = nums.size()-1;
         	while(start < end){
